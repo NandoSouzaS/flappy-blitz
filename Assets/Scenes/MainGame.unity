@@ -1576,17 +1576,23 @@ MonoBehaviour:
     volume: 0.2
     pitch: 1
     source: {fileID: 0}
-    loop: 0
+    loop: 1
   - name: MainGameTheme
     clip: {fileID: 8300000, guid: 69100139aefbb8e41b93828c95816241, type: 3}
     volume: 0.2
     pitch: 1
     source: {fileID: 0}
-    loop: 0
+    loop: 1
   - name: tankEngine
     clip: {fileID: 8300000, guid: 804bf78493b1ac740bc1bd61f0ab5ecc, type: 3}
     volume: 0.03
     pitch: 0.85
+    source: {fileID: 0}
+    loop: 1
+  - name: TankCrash
+    clip: {fileID: 8300000, guid: a00ddb8553145974a930814312e7e7ea, type: 3}
+    volume: 0.5
+    pitch: 1
     source: {fileID: 0}
     loop: 0
 --- !u!4 &1927816883

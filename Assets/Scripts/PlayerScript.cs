@@ -42,6 +42,9 @@ public class PlayerScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        FindObjectOfType<AudioManager>().Play("TankCrash");
+        FindObjectOfType<AudioManager>().Stop("tankEngine");
+
         logic.gameOver();
         PlayerIsAlive = false;
     }

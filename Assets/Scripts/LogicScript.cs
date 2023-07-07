@@ -33,6 +33,7 @@ public class LogicScript : MonoBehaviour
     {
         FindObjectOfType<AudioManager>().Stop("tankEngine");
         FindObjectOfType<AudioManager>().Stop("MainGameTheme");
+        FindObjectOfType<AudioManager>().Stop("TankCrash");
         SceneManager.LoadScene(0);
     }
 }
