@@ -31,6 +31,8 @@ public class LogicScript : MonoBehaviour
 
     public void backToMenu()
     {
+        FindObjectOfType<AudioManager>().Stop("tankEngine");
+        FindObjectOfType<AudioManager>().Stop("MainGameTheme");
         SceneManager.LoadScene(0);
     }
 }
