@@ -13,6 +13,9 @@ public class PlayerScript : MonoBehaviour
     void Start()
     {
         logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
+        FindObjectOfType<AudioManager>().Stop("MenuTheme");
+        FindObjectOfType<AudioManager>().Play("tankEngine");
+        FindObjectOfType<AudioManager>().Play("MainGameTheme");
     }
 
     // Update is called once per frame
